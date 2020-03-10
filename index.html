@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EAFIT</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://bastxt.github.io/CSS_CDN/custom-style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-style.css">
 </head>
 
 <body>
@@ -17,19 +18,38 @@
                 <div class="navbar bg-nav">
                     <a id="home" class="navbar-brand pull-left" href="#" data-toggle="tooltip" data-placement="top"
                         title="Home">
-                        <img class="icon_nav" src="https://bastxt.github.io/ASSETS/iconos-home.png" />
+                        <img class="icon_nav" src="Assets/iconos-home.png" />
                     </a>
-                    <img class="p_ico" src="https://bastxt.github.io/ASSETS/eafit_logo.png" width="100px" />
+                    <img class="p_ico" src="Assets/eafit_logo.png" width="100px" />
                     <a id="exit" class="navbar-brand pull-right" href="#" data-toggle="Exit" title="Exit">
-                        <img class="icon_nav" src="https://bastxt.github.io/ASSETS/iconos-salir.png" />
+                        <img class="icon_nav" src="Assets/iconos-salir.png" />
                     </a>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center h-100">
+            <div class="col-2 h-100 l_con">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item item_mn">
+                        <span class="per_icon"></span>1. DATOS PERSONALES
+                    </li>
+                    <li class="list-group-item item_mn">
+                        <span class="aca_icon"></span>2. PROGRAMA ACADÉMICO
+                    </li>
+                    <li class="list-group-item item_mn">
+                        <span class="info_aca_icon"></span>3. INFORMACIÓN ACADEMICA
+                    </li>
+                    <li class="list-group-item item_mn">
+                        <span class="gru_fam_icon"></span>4. GRUPO FAMILIAR
+                    </li>
+                    <li class="list-group-item item_mn">
+                        <span class="req_icon"></span>5. REQUERIMIENTOS ADICIONALES
+                    </li>
+                </ul>
+            </div>
             <div class="col-10 h-100 r_con">
                 <div class="row justify-content-center tt_form">
-                    <div class="row container" style="align-items: baseline; margin-left:12.5%;">
+                    <div class="row container" style="align-items: baseline;">
                         <div id="title_form" class="col col-3" style="text-align-last: start;">
                             <p class="tl_form">INSCRIPCIÓN</p>
                         </div>
@@ -38,7 +58,8 @@
                         </div>
                     </div>
                 </div>
-                <hr class="text-left" style="width: 74%; margin-left: 12.5%;">
+                <hr class="text-left" style="width: 74%; margin-left: 0px;">
+
                 <!-- Seccion Formulario [Datos Personales] -->
                 <div id="dat_per_sec" class="body_form h-100">
                     <div class="row justify-content-center h-100">
@@ -286,6 +307,28 @@
                             <br>
                             <br>
                         </div>
+                        <div class="col col-3">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <p class="card-text txt-eafit">Opciones</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="guardar_icon"></span>GUARDAR</a>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="limpiar_icon"></span>LIMPIAR</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="form-row">
+                                        <div class="col col-6">
+
+                                        </div>
+                                        <div class="col col-6" style="text-align-last: end;">
+                                            <a id="dis_opc" onclick="dis_opc()" class="card-text txt-eafit selc" style="">ADELANTE<span
+                                                    class="ade_icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Seccion Formulario [Datos Personales]-->
@@ -507,6 +550,29 @@
                             <br>
                             <br>
                             <br>
+                        </div>
+                        <div class="col col-3">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <p class="card-text txt-eafit">Opciones</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="guardar_icon"></span>GUARDAR</a>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="limpiar_icon"></span>LIMPIAR</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="form-row">
+                                        <div class="col col-6">
+                                            <a id="dis_opc" onclick="dis_opc()" class="card-text txt-eafit selc"><span
+                                                    class="atr_icon"></span>ATRAS</a>
+                                        </div>
+                                        <div class="col col-6" style="text-align-last: end;">
+                                            <a id="dis_opc" onclick="dis_opc()" class="card-text txt-eafit selc">ADELANTE<span
+                                                    class="ade_icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -774,6 +840,29 @@
                             <br>
                             <br>
                         </div>
+                        <div class="col col-3">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <p class="card-text txt-eafit">Opciones</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="guardar_icon"></span>GUARDAR</a>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="limpiar_icon"></span>LIMPIAR</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="form-row">
+                                        <div class="col col-6">
+                                            <a id="dis_opc" class="card-text txt-eafit selc" style=""><span
+                                                    class="atr_icon"></span>ATRAS</a>
+                                        </div>
+                                        <div class="col col-6" style="text-align-last: end;">
+                                            <a id="dis_opc" class="card-text txt-eafit selc" style="">ADELANTE<span
+                                                    class="ade_icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Seccion Formulario [Informacion Academica]-->
@@ -1028,6 +1117,29 @@
                             <br>
                             <br>
                         </div>
+                        <div class="col col-3">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <p class="card-text txt-eafit">Opciones</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="guardar_icon"></span>GUARDAR</a>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="limpiar_icon"></span>LIMPIAR</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="form-row">
+                                        <div class="col col-6">
+                                            <a id="dis_opc" class="card-text txt-eafit selc"><span
+                                                    class="atr_icon"></span>ATRAS</a>
+                                        </div>
+                                        <div class="col col-6" style="text-align-last: end;">
+                                            <a id="dis_opc" class=" card-text txt-eafit selc">ADELANTE<span
+                                                    class="ade_icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Seccion Formulario [Dominio de Idiomas]-->
@@ -1158,6 +1270,29 @@
                             <br>
                             <br>
                         </div>
+                        <div class="col col-3">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <p class="card-text txt-eafit">Opciones</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="guardar_icon"></span>GUARDAR</a>
+                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                            class="limpiar_icon"></span>LIMPIAR</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="form-row">
+                                        <div class="col col-6">
+                                            <a id="dis_opc" class="card-text txt-eafit selc" style=""><span
+                                                    class="atr_icon"></span>ATRAS</a>
+                                        </div>
+                                        <div class="col col-6" style="text-align-last: end;">
+                                            <a id="dis_opc" class="card-text txt-eafit selc" style="">ADELANTE<span
+                                                    class="ade_icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Seccion Formulario [Informqcion ICFES]-->
@@ -1180,14 +1315,9 @@
         </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-<script src="https://bastxt.github.io/JS_CDN/custom-script.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom-script.js"></script>
+
 </html>

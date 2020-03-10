@@ -59,64 +59,64 @@ body{
 /*icons*/
 
 .atr_icon{
-    background-image: url(../Assets/iconos-flecha\ izquierda.png);
+    background-image: url(../ASSETS/iconos-flecha\ izquierda.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     background-size: 20px;
 }
 .ade_icon{
-    background-image: url(../Assets/iconos-flecha\ derecha.png);
+    background-image: url(../ASSETS/iconos-flecha\ derecha.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     background-size: 20px;
 }
 .guardar_icon{
-    background-image: url(../Assets/iconos\ -\ guardar.png);
+    background-image: url(../ASSETS/iconos\ -\ guardar.png);
     background-repeat: no-repeat;
     padding-left: 25px;
 }
 .limpiar_icon{
-    background-image: url(../Assets/iconos\ -\ basura.png);
+    background-image: url(../ASSETS/iconos\ -\ basura.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     background-size: 20px;
 }
 .adver_icfes_icon{
-    background-image: url(../Assets/iconos-alerta.png);
+    background-image: url(../ASSETS/iconos-alerta.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     background-size: 20px;
 }
 .per_icon{
-    background-image: url(../Assets/iconos\ -\ persona.png);
+    background-image: url(../ASSETS/iconos\ -\ persona.png);
     background-repeat: no-repeat;
     padding-left: 15px;
     background-blend-mode: luminosity;
     background-size: 15px;
 }
 .aca_icon{
-    background-image: url(../Assets/iconos\ -\ estudiante.png);
+    background-image: url(../ASSETS/iconos\ -\ estudiante.png);
     background-repeat: no-repeat;
     padding-left: 15px;
     background-blend-mode: luminosity;
     background-size: 15px;
 }
 .info_aca_icon{
-    background-image: url(../Assets/iconos\ -\ documento.png);
+    background-image: url(../ASSETS/iconos\ -\ documento.png);
     background-repeat: no-repeat;
     padding-left: 15px;
     background-blend-mode: luminosity;
     background-size: 15px;
 }
 .gru_fam_icon{
-    background-image: url(../Assets/iconos\ -\ hogar.png);
+    background-image: url(../ASSETS/iconos\ -\ hogar.png);
     background-repeat: no-repeat;
     padding-left: 15px;
     background-blend-mode: luminosity;
     background-size: 15px;
 }
 .req_icon{
-    background-image: url(../Assets/iconos\ -\ agregar\ documentos.png);
+    background-image: url(../ASSETS/iconos\ -\ agregar\ documentos.png);
     background-repeat: no-repeat;
     padding-left: 15px;
     background-blend-mode: luminosity;

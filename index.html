@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAFIT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://bastxt.github.io/CSS_CDN/custom-style.css">
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <div class="row">
+            <div class="col nv-side">
+                <div class="navbar bg-nav">
+                    <a id="home" class="navbar-brand pull-left" href="#" data-toggle="tooltip" data-placement="top"
+                        title="Home">
+                        <img class="icon_nav" src="Assets/iconos-home.png" />
+                    </a>
+                    <img class="p_ico" src="Assets/eafit_logo.png" width="100px" />
+                    <a id="exit" class="navbar-brand pull-right" href="#" data-toggle="Exit" title="Exit">
+                        <img class="icon_nav" src="Assets/iconos-salir.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center h-100">
+            <div class="col-10 h-100 r_con">
+                <div class="row justify-content-center tt_form">
+                    <div class="row container" style="align-items: baseline; margin-left:12.5%;">
+                        <div id="title_form" class="col col-3" style="text-align-last: start;">
+                            <p class="tl_form">INSCRIPCIÓN</p>
+                        </div>
+                        <div id="sub_title_form" class="col col-6" style="text-align-last: end;">
+                            <p class="sub_tl_form">Datos Personales</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-left" style="width: 74%; margin-left: 12.5%;">
+                <!-- Seccion Formulario [Datos Personales] -->
+                <div id="dat_per_sec" class="body_form h-100">
+                    <div class="row justify-content-center h-100">
+                        <div class="col col-9">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <p class="card-text txt-eafit">La información diligenciada en este formulario podrá
+                                        ser
+                                        guardada en cualquier momento. Si aún no tiene todos los documentos que se
+                                        solicitan, pódras adjuntarlos hasta antes de enviar tu solicitud de incripción
+                                    </p>
+                                    <form id="dat_per" class="dat_per" novalidate>
+                                        <div class="form-group txt-eafit">
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="Nom">Nombre</label>
+                                                        <input id="Nom"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Nombre" title="Nombre"
+                                                            name="OBKey__704_1" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row ">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="P_ape">Primer Apellido</label>
+                                                        <input id="P_ape"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Primer Apellido"
+                                                            title="Primer Apellido" name="OBKey__705_1" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="S_ape">Segundo Apellido</label>
+                                                        <input id="S_ape"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Segundo Apellido"
+                                                            title="Segundo Apellido" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="doc_type">Tipo de Documento</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="doc_type" title="Tipo de Documento" name="OBKey__706_1"
+                                                            required>
+                                                            <option></option>
+                                                            <option>C.C</option>
+                                                            <option>T.I</option>
+                                                            <option>C.E</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row ">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="aux_1">Numero Documento</label>
+                                                        <input id="aux_1"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Auxiliar 1" title="Auxiliar 1"
+                                                            name="OBKey__707_1" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="aux_2">Auxiliar 2</label>
+                                                        <input id="aux_2"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Auxiliar 2" title="Auxiliar 2"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row ">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="fchN">Fecha de Nacimiento</label>
+                                                        <input id="fchN"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="date" placeholder="Fecha de Nacimiento"
+                                                            title="Fecha de Nacimiento" name="OBKey__708_1" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="luN">Lugar de Nacimiento</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="luN" title="Tipo de Documento" name="OBKey__709_1"
+                                                            required>
+                                                            <option></option>
+                                                            <option>Ciudad 1</option>
+                                                            <option>Ciudad 2</option>
+                                                            <option>Ciudad 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row ">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="gen">Género</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="gen" title="Género" name="OBKey__710_1" required>
+                                                            <option></option>
+                                                            <option>Masculino</option>
+                                                            <option>Femenino</option>
+                                                            <option>Otros</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="estC">Estado Civil</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="estC" title="Estado Civil" name="OBKey__711_1" required>
+                                                            <option></option>
+                                                            <option>Soltero</option>
+                                                            <option>Casado</option>
+                                                            <option>Union Libre</option>
+                                                            <option>Otro</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row ">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="rh">RH</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="rh" title="RH" name="OBKey__712_1" required>
+                                                            <option></option>
+                                                            <option>O</option>
+                                                            <option>A</option>
+                                                            <option>B</option>
+                                                            <option>AB</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="eps">EPS</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="esp" title="EPS" name="OBKey__713_1" required>
+                                                            <option></option>
+                                                            <option>EPS 1</option>
+                                                            <option>EPS 2</option>
+                                                            <option>EPS 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="dir">Dirección de Residencia</label>
+                                                        <input id="dir"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Dirección de Residencia"
+                                                            title="Dirección de Residencia" name="OBKey__714_1"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="estS">Estrato Socioeconomico</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="estS" title="Estrato Socioeconomico" name="OBKey__715_1"
+                                                            required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>opc 2</option>
+                                                            <option>opc 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="repSN">¿Practica algún deporte
+                                                            representativo?</label>
+                                                        <br>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="repS" name="rep"
+                                                                class="custom-control-input" title="Si" required>
+                                                            <label class="custom-control-label" for="repS">Si</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="repN" name="rep"
+                                                                class="custom-control-input" title="No" required>
+                                                            <label class="custom-control-label" for="repN">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="Lab_N">Laboras Actualmente?</label>
+                                                        <br>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="labS" name="labAc"
+                                                                class="custom-control-input" title="Si" required>
+                                                            <label class="custom-control-label" for="labS">Si</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="labN" name="labAc"
+                                                                class="custom-control-input" title="No" required>
+                                                            <label class="custom-control-label" for="labN">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group float-right">
+                                <button id="continue_u" type="submit" form="dat_per"
+                                    class="btn btn-info">Continuar</button>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seccion Formulario [Datos Personales]-->
+
+                <!-- Seccion Formulario [Programa Academico]-->
+                <div id="pro_aca_sec" class="body_form h-100" style="display:none;">
+                    <div class="row justify-content-center h-100">
+                        <div class="col col-9">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <form id="pro_aca" class="pro_aca" novalidate>
+                                        <div class="form-group txt-eafit">
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="type_pro">Tipo de Programa</label>
+                                                        <input id="type_pro"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Tipo de Programa"
+                                                            title="Tipo de Programa" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row ">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="prog">Programa</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="prog" title="Programa" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="segO">Segunda Opción</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="segO" title="Segunda Opción" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="ini_sem">¿En qué semestre deseas iniciar?</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="ini_sem" title="Inicio Semestre" required>
+                                                            <option></option>
+                                                            <option>Semestre 1</option>
+                                                            <option>Semestre 2</option>
+                                                            <option>Semestre 3</option>
+                                                            <option>Semestre 4</option>
+                                                            <option>Semestre 5</option>
+                                                            <option>Semestre 6</option>
+                                                            <option>Semestre 7</option>
+                                                            <option>Semestre 8</option>
+                                                            <option>Semestre 9</option>
+                                                            <option>Semestre 10</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="ini_sem">¿Cómo te enteraste del programa?</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="ini_sem" title="Inicio Semestre" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="repSN">¿Has realizado o te encuentras realizando
+                                                            otros estudios de educación superior en una institución
+                                                            diferente a EAFIT?</label>
+                                                        <br>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="estuS" name="estu"
+                                                                class="form-check-input custom-control-input" title="Si"
+                                                                value="si" required>
+                                                            <label class="custom-control-label" for="estuS">Si</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="estuN" name="estu"
+                                                                class=" form-check-input custom-control-input"
+                                                                title="No" value="no" required>
+                                                            <label class="custom-control-label" for="estuN">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row ">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="rh">Tipo de aspirante</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="rh" title="RH" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="dir">Queremos conocer cómo vas a pagar tus estudios,
+                                                            con el fin de ayudarte si así lo necesitas. Selecciona
+                                                            el/los medios de pago que utilizaras.</label>
+                                                        <br>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="mPE1" name="mPE"
+                                                                class="form-check-input custom-control-input" title="Si"
+                                                                value="opc1" required>
+                                                            <label class="custom-control-label" for="mPE1">Recursos
+                                                                Propios</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="mPE2" name="mPE"
+                                                                class=" form-check-input custom-control-input"
+                                                                title="No" value="opc2" required>
+                                                            <label class="custom-control-label"
+                                                                for="mPE2">Empresa</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="mPE3" name="mPE"
+                                                                class="form-check-input custom-control-input" title="Si"
+                                                                value="opc1" required>
+                                                            <label class="custom-control-label" for="mPE3">Financiación
+                                                                externa</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="mPE4" name="mPE"
+                                                                class="form-check-input custom-control-input" title="Si"
+                                                                value="opc1" required>
+                                                            <label class="custom-control-label" for="mPE4">Crédito
+                                                                ICETEX</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="mPE5" name="mPE"
+                                                                class=" form-check-input custom-control-input"
+                                                                title="No" value="opc2" required>
+                                                            <label class="custom-control-label" for="mPE5">Voy a
+                                                                solicitar crédito EAFIT A Tu Alcance</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="mPE6" name="mPE"
+                                                                class="form-check-input custom-control-input" title="Si"
+                                                                value="opc1" required>
+                                                            <label class="custom-control-label" for="mPE6">Beca
+                                                                externa</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="mPE7" name="mPE"
+                                                                class="form-check-input custom-control-input" title="Si"
+                                                                value="opc1" required>
+                                                            <label class="custom-control-label" for="mPE7">Beca
+                                                                Generación-E</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="mPE8" name="mPE"
+                                                                class="form-check-input custom-control-input" title="Si"
+                                                                value="opc1" required>
+                                                            <label class="custom-control-label" for="mPE8">Estoy
+                                                                participando en una convocatoria de beca EAFIT.</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="mPE9" name="mPE"
+                                                                class="form-check-input custom-control-input" title="Si"
+                                                                value="opc1" required>
+                                                            <label class="custom-control-label" for="mPE9">No estoy
+                                                                seguro. quiero acesoria de EAFIT a tu alcance.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group float-left">
+                                <button id="return_pro_aca" type="button" class="btn btn-info">Regresar</button>
+                            </div>
+                            <div class="form-group float-right">
+                                <button id="cont_pro_aca" type="submit" form="pro_aca"
+                                    class="btn btn-info">Continuar</button>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seccion Formulario [Programa Academico]-->
+
+                <!-- Seccion Formulario [Información Académica]-->
+                <div id="inf_aca_sec" class="body_form h-100" style="display:none;">
+                    <div class="row justify-content-center h-100">
+                        <div class="col col-9">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <form id="inf_aca" class="inf_aca" novalidate>
+                                        <div class="form-group txt-eafit">
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="type_pro">Nivel Máximo de estudio alcanzado</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="maxE" title="maxE" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row ">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="prog">Nombre Institución</label>
+                                                        <input id="nom_ins"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Nombre Institución"
+                                                            title="Nombre Institución" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="pais">País</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="pais" title="País" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                            <option>Opc 5</option>
+                                                            <option>Opc 6</option>
+                                                            <option>Opc 7</option>
+                                                            <option>Opc 8</option>
+                                                            <option>Opc 9</option>
+                                                            <option>Opc 10</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="dep">Departamento</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="dep" title="departamento" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                            <option>Opc 5</option>
+                                                            <option>Opc 6</option>
+                                                            <option>Opc 7</option>
+                                                            <option>Opc 8</option>
+                                                            <option>Opc 9</option>
+                                                            <option>Opc 10</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="ciudad">Ciudad</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="ciudad" title="Ciudad" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="aoGra">Año de Grado</label>
+                                                        <input id="aoGra" type="text"
+                                                            class="form-control form-control-sm custom-control"
+                                                            title="aoGrado" placeholder="Año de Grado" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row ">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="prog">Programa</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="prog" title="programa" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="modl">Modalidad</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="modl" title="modalidad" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <h5 style="font-weight: bold;">Notas Bachillerato</h5>
+                                                        <p class="card-text txt-eafit">
+                                                            Si tu colegio tiene hasta el grado 11 y lo estás cursando en
+                                                            este momento. la adminisión se hará con base en las notas
+                                                            definitivas del grado 10; si tu colegio tiene hasta grado 12
+                                                            y lo estás cursando en este momento, la admisión se hará con
+                                                            base en las notas del grado 11. Si ya te has graduado, la
+                                                            admisión se hrá con base en las notas definitivas obtenidas
+                                                            en el máximo grado que tiene tu colegio.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="graB">Grado de bachillerato que estas
+                                                            cursando</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="graB" title="Grado de bachillerato que estas cursando" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="esc">Selecciona escala de evaluación</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="esc" title="Selecciona escala de evaluación" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <h5 style="font-weight: bold;">Notas de cada materia:</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row ">
+                                                <label class="col-sm-3 col-form-label" for="mat1">Ingles</label>
+                                                <div class="col-sm-2">
+                                                    <input id="mat1"
+                                                        class="form-control form-control-sm custom-control custom-control-inline"
+                                                        type="text" placeholder="Nota" title="Ingles" required>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row ">
+                                                <label class="col-sm-3 col-form-label" for="mat2">Matematicas</label>
+                                                <div class="col-sm-2">
+                                                    <input id="mat2"
+                                                        class="form-control form-control-sm custom-control custom-control-inline"
+                                                        type="text" placeholder="Nota" title="Matematicas" required>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row ">
+                                                <label class="col-sm-3 col-form-label" for="mat3">Fisica</label>
+                                                <div class="col-sm-2">
+                                                    <input id="mat3"
+                                                        class="form-control form-control-sm custom-control custom-control-inline"
+                                                        type="text" placeholder="Nota" title="Fisica" required>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row ">
+                                                <label class="col-sm-3 col-form-label" for="mat4">Filosofia</label>
+                                                <div class="col-sm-2">
+                                                    <input id="mat4"
+                                                        class="form-control form-control-sm custom-control custom-control-inline"
+                                                        type="text" placeholder="Nota" title="Filosofia" required>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row ">
+                                                <label class="col-sm-3 col-form-label" for="mat5">Quimica</label>
+                                                <div class="col-sm-2">
+                                                    <input id="mat5"
+                                                        class="form-control form-control-sm custom-control custom-control-inline"
+                                                        type="text" placeholder="Nota" title="Quimica" required>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row ">
+                                                <label class="col-sm-3 col-form-label" for="mat6">Sociales</label>
+                                                <div class="col-sm-2">
+                                                    <input id="mat6"
+                                                        class="form-control form-control-sm custom-control custom-control-inline"
+                                                        type="text" placeholder="Nota" title="Sociales" required>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group float-left">
+                                <button id="return_inf_aca" type="button" class="btn btn-info">Regresar</button>
+                            </div>
+                            <div class="form-group float-right">
+                                <button id="cont_inf_aca" type="submit" form="inf_aca" class="btn btn-info">Continuar</button>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seccion Formulario [Informacion Academica]-->
+
+                <!-- Seccion Formulario [Dominio de idiomas]-->
+                <div id="dom_idi_sec" class="body_form h-100" style="display:none;">
+                    <div class="row justify-content-center h-100">
+                        <div class="col col-9">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <form id="dom_idi" class="dom_idi" novalidate>
+                                        <div class="form-group txt-eafit">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <h5 style="font-weight: bold;">Bilinguismo negocios
+                                                            internacionales</h5>
+                                                        <p class="card-text txt-eafit">
+                                                            Para realizar tu matricula el pregrado de Negocios
+                                                            Internacionales, deberas acreditar bilinguismo en ingles.
+                                                            Por lo que debes adjuntar una prueba bajo alguno de los
+                                                            examenes internacionales (correspondientes al Marco Común
+                                                            Europeo [MCERL]) que acredite el puntaje requerido para el
+                                                            ingreso. Si tienes alguna duda puedes consultar el
+                                                            reglamento de bilinguismo: <a
+                                                                href="www.eafit.edu.co/bilimguismo">www.eafit.edu.co/bilimguismo</a>.
+                                                        </p>
+                                                        <p class="card-text txt-eafit">
+                                                            Si aún no haz presentado la prueba, la podras realizar en
+                                                            nuestro centro de idiomas o en un centro acreditado para
+                                                            hacerlo. Esta debe ser entregada y adjuntada para realizar
+                                                            el proceso de matricula.
+                                                        </p>
+                                                        <p class="card-text txt-eafit">
+                                                            Este certificado será valido para el ingreso al pregrado por
+                                                            12 meses a partir de la fecha de presentación del examen. Si
+                                                            el certificado es otorgado por el centro de idiomas EAFIT.
+                                                            será valido por 2 años a partir de la fecha de culminación
+                                                            del ultimo curso aprobado.
+                                                        </p>
+                                                        <p class="card-text txt-eafit">
+                                                            Si terminaste tu bachillerato en una institución de
+                                                            educación formal localizada en un pais cuyo idioma nativo es
+                                                            el que elegiste para certificar, se convalidará con el
+                                                            diploma/acta de grado entregado para la admisión.
+                                                        </p>
+                                                        <p class="card-text txt-eafit">
+                                                            Asi mismo, deberás antes de obtener tu grado, acreditar un
+                                                            tercer idioma, Selecciona el idioma que quisieras acreditar.
+                                                        </p>
+                                                    </div>
+                                                    <br>
+                                                    <div class="form-group">
+                                                        <h5 style="font-weight: bold;">Bilinguismo negocios
+                                                            internacionales</h5>
+                                                        <p class="card-text txt-eafit">
+                                                            Durante tu pregrado se te solicitará acreditar un nivel B2
+                                                            de bilinguismo según el Marco Común Europeo (MCERL),
+                                                            Selecciona el idioma que quieras acreditar.
+                                                        </p>
+                                                        <p class="card-text txt-eafit">
+                                                            Si ya tienes un examen internacional que acredite este nivel
+                                                            lo puedes adjuntar, De lo contrario, solo selecciona el
+                                                            idioma a acreditar y cuando lo presentes o sea requerido
+                                                            adjuntalo. Si quieres saber más sobre el reglamento de
+                                                            bilinguismo ingresa a <a
+                                                                href="www.eafit.edu.co/bilinguismo">www.eafit.edu.co/bilinguismo</a>.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="graB">¿Que idioma deseas certificar?</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="graB" title="Grado de bachillerato que estas cursando" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row align-middle">
+                                                <div class="col-sm-3 align-middle">
+                                                    <label class="col-form-label align-middle" for="lect">Nivel de
+                                                        Lectura:</label>
+                                                </div>
+                                                <div class="col-sm-2 align-middle">
+                                                    <div class="form-check form-check-inline align-middle">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="lect"
+                                                                id="Radio1" value="option1" required> ALTO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 align-middle">
+                                                    <div class="form-check form-check-inline align-middle">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="lect"
+                                                                id="Radio2" value="option2" required> MEDIO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 align-middle">
+                                                    <div class="form-check form-check-inline align-middle">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="lect"
+                                                                id="Radio3" value="option3" required> BAJO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row align-middle">
+                                                <div class="col-sm-3 align-middle">
+                                                    <label class="col-form-label align-middle" for="lect">Nivel de
+                                                        Escritura:</label>
+                                                </div>
+                                                <div class="col-sm-2 align-middle">
+                                                    <div class="form-check form-check-inline align-middle">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="escr"
+                                                                id="Radio1" value="option1" required> ALTO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 align-middle">
+                                                    <div class="form-check form-check-inline align-middle">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="escr"
+                                                                id="Radio2" value="option2" required> MEDIO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 align-middle">
+                                                    <div class="form-check form-check-inline align-middle">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="escr"
+                                                                id="Radio3" value="option3" required> BAJO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="form-row align-middle">
+                                                <div class="col-sm-3 align-middle">
+                                                    <label class="col-form-label align-middle" for="lect">Nivel de
+                                                        conversación:</label>
+                                                </div>
+                                                <div class="col-sm-2 align-middle">
+                                                    <div class="form-check form-check-inline align-middle">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name=""
+                                                                id="Radio1" value="option1" required> ALTO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 align-middle">
+                                                    <div class="form-check form-check-inline align-middle">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name=""
+                                                                id="Radio2" value="option2" required> MEDIO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 align-middle">
+                                                    <div class="form-check form-check-inline align-middle">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name=""
+                                                                id="Radio3" value="option3" required> BAJO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="cert">¿Tienes este idioma certificado?</label>
+                                                        <br>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="certS" name="cert"
+                                                                class="custom-control-input" title="Si" required>
+                                                            <label class="custom-control-label" for="certS">Si</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="certN" name="cert"
+                                                                class="custom-control-input" title="No" required>
+                                                            <label class="custom-control-label" for="certN">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="pru_pre">Prueba Presentada</label>
+                                                        <select
+                                                            class="form-control custom-control form-control-sm txt-eafit"
+                                                            id="pru_pre" title="Prueba Presentada" required>
+                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
+                                                            <option>Opc 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="pun">Puntaje Obtenido</label>
+                                                        <input id="pun"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Puntaje Obtenido"
+                                                            title="Puntaje Obtenido" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="ao_pre">¿Año que presentaste el examen?</label>
+                                                        <input id="ao_pre"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="¿Año que presentaste el examen?"
+                                                            title="¿Año que presentaste el examen?" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group float-left">
+                                <button id="return_dom_idi" type="button" class="btn btn-info">Regresar</button>
+                            </div>
+                            <div class="form-group float-right">
+                                <button id="continue_dom_idi" type="submit" form="dom_idi" class="btn btn-info">Continuar</button>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seccion Formulario [Dominio de Idiomas]-->
+
+                <!-- Seccion Formulario [Informqcion ICFES]-->
+                <div id="inf_icfes_sec" class="body_form h-100" style="display:none;">
+                    <div class="row justify-content-center h-100">
+                        <div class="col col-9">
+                            <div class="card shadow p-3 mb-5 bg-white rounded" style="">
+                                <div class="card-body">
+                                    <form id="inf_icfes" class="inf_icfes" novalidate>
+                                        <div class="form-group txt-eafit">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <h5 style="font-weight: bold;">Pruebas saber PRO (ICFES)</h5>
+                                                        <p class="card-text txt-eafit">
+                                                            Si terminaste tu bachillerato en el exterior adjunta una
+                                                            copia del certificado del examen que pueda convalidarse para
+                                                            el ingreso a la educación superior en colombia. Si no sabes
+                                                            si el que tienes tiene reconocimiento y validez, ingresa a
+                                                            la pagina oficial del ICFES para conocer los examenes
+                                                            internacionales que son homologables por el ICFES.
+                                                        </p>
+                                                        <p class="card-text txt-eafit">
+                                                            <a href="https://www.icfes.gov.co/">Ir a la página del
+                                                                ICFES</a>.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="cert">¿Ya presentaste el examen ICFES?</label>
+                                                        <br>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="icfesS" name="icfes"
+                                                                class="custom-control-input" title="Si" required>
+                                                            <label class="custom-control-label" for="icfesS">Si</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="icfesN" name="icfes"
+                                                                class="custom-control-input" title="No" required>
+                                                            <label class="custom-control-label" for="icfesN">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="pun">Número o codigo del ICFES</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-inline">
+                                                        <div class="form-group">
+                                                            <input id="pun"
+                                                                class="col-2 form-control form-control-sm custom-control"
+                                                                type="text" placeholder="AC" title="AC"
+                                                                style="margin-right: 10px;" required> 
+                                                            <input id="pun"
+                                                                class="col-2 form-control form-control-sm custom-control"
+                                                                type="text" placeholder="AÑO" title="AÑO"
+                                                                style="margin-right: 10px;" required>
+                                                            <input id="pun"
+                                                                class="col-2 form-control form-control-sm custom-control"
+                                                                type="text" placeholder="PERIODO" title="PERIODO"
+                                                                style="margin-right: 10px;" required>
+                                                            <input id="pun"
+                                                                class="col-2 form-control form-control-sm custom-control"
+                                                                type="text" placeholder="7 DÍGITOS" title="7 DÍGITOS" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <p class="card-text txt-eafit">
+                                                            Si aún no tienes los resultados de las pruebas saber 11 o no
+                                                            las has presentado, ingresa el código de la inscripción
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col col-6">
+                                                    <div class="form-group">
+                                                        <label for="codIns">Código de Inscripción</label>
+                                                        <input id="codIns"
+                                                            class="form-control form-control-sm custom-control"
+                                                            type="text" placeholder="Cóodigo de Inscripción"
+                                                            title="Código de Inscripción" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <p class="card-text txt-eafit">
+                                                            <span class="adver_icfes_icon"></span>
+                                                            Para Realizar el proceso de admisión y matricula, debe haber
+                                                            presentado el examen ICFES / Saber 11.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group float-left">
+                                <button id="return_inf_icfes" type="button" class="btn btn-info">Regresar</button>
+                            </div>
+                            <div class="form-group float-right">
+                                <button id="continue_inf_icfes" type="submit" form="inf_icfes" class="btn btn-info">Continuar</button>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seccion Formulario [Informqcion ICFES]-->
+            </div>
+        </div>
+    </div>
+    <!-- Modal de alertas-->
+    <div class="modal fade txt-eafit" id="msmAlertModal" tabindex="-1" role="dialog"
+        aria-labelledby="msmAlertModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="msmAlertTitle" class="modal-title tl_form"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="msmAlertBody" class="modal-body txt-eafit"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://bastxt.github.io/JS_CDN/custom-script.js"></script>
+
+</html>

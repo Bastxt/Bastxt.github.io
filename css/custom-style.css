@@ -59,7 +59,7 @@ body{
 /*icons*/
 
 .atr_icon{
-    background-image: url(../ASSETS/iconos-flecha\ izquierda.png);
+    background-image: url(/ASSETS/iconos-flecha\ izquierda.png);
     background-repeat: no-repeat;
     padding-left: 25px;
     background-size: 20px;

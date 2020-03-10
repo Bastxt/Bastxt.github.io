@@ -78,7 +78,7 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="Nom">Nombre</label>
-                                                        <input id="Nom" data-tippy-content="Digite su Nombre"
+                                                        <input id="Nom" onkeyup="verf_text(this)" data-tippy-content="Digite su Nombre"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Nombre" name="OBKey__704_1"
                                                             required>
@@ -89,7 +89,7 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="P_ape">Primer Apellido</label>
-                                                        <input id="P_ape"
+                                                        <input id="P_ape" onkeyup="verf_text(this)"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Primer Apellido"
                                                             data-tippy-content="Digite su primer apellido."
@@ -99,7 +99,7 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="S_ape">Segundo Apellido</label>
-                                                        <input id="S_ape"
+                                                        <input id="S_ape" onkeyup="verf_text(this)"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Segundo Apellido"
                                                             data-tippy-content="Digite su segundo apellido."
@@ -128,7 +128,7 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="aux_1">Numero Documento</label>
-                                                        <input id="aux_1"
+                                                        <input id="aux_1" onkeyup="verf_num(this)"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Numero Documento" data-tippy-content="Digite su numero de documento"
                                                             name="OBKey__707_1" required>
@@ -224,7 +224,7 @@
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label for="dir">Dirección de Residencia</label>
-                                                        <input id="dir"
+                                                        <input id="dir" onkeyup="verf_text(this)"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Dirección de Residencia"
                                                             data-tippy-content="Digite su dirección de residencia" name="OBKey__714_1"
@@ -340,7 +340,7 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="type_pro">Tipo de Programa</label>
-                                                        <input id="type_pro"
+                                                        <input id="type_pro" onkeyup="verf_text(this)"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Tipo de Programa"
                                                             data-tippy-content="Digite el tipo de programa" required>
@@ -599,7 +599,7 @@
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label for="prog">Nombre Institución</label>
-                                                        <input id="nom_ins"
+                                                        <input id="nom_ins" onkeyup="verf_text(this)"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Nombre Institución"
                                                             data-tippy-content="Digite el nombre de la institución" required>
@@ -668,7 +668,7 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="aoGra">Año de Grado</label>
-                                                        <input id="aoGra" type="text"
+                                                        <input id="aoGra" type="text" onkeyup="verf_num(this)"
                                                             class="form-control form-control-sm custom-control"
                                                             data-tippy-content="Digite el año en el cual se graduo" placeholder="Año de Grado" required>
                                                     </div>
@@ -766,7 +766,7 @@
                                             <div class="form-row ">
                                                 <label class="col-sm-3 col-form-label" for="mat1">Ingles</label>
                                                 <div class="col-sm-2">
-                                                    <input id="mat1"
+                                                    <input id="mat1" onkeyup="verf_num(this)"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
                                                         type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
@@ -775,7 +775,7 @@
                                             <div class="form-row ">
                                                 <label class="col-sm-3 col-form-label" for="mat2">Matematicas</label>
                                                 <div class="col-sm-2">
-                                                    <input id="mat2"
+                                                    <input id="mat2" onkeyup="verf_num(this)"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
                                                         type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
@@ -784,7 +784,7 @@
                                             <div class="form-row ">
                                                 <label class="col-sm-3 col-form-label" for="mat3">Fisica</label>
                                                 <div class="col-sm-2">
-                                                    <input id="mat3"
+                                                    <input id="mat3" onkeyup="verf_num(this)"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
                                                         type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
@@ -793,7 +793,7 @@
                                             <div class="form-row ">
                                                 <label class="col-sm-3 col-form-label" for="mat4">Filosofia</label>
                                                 <div class="col-sm-2">
-                                                    <input id="mat4"
+                                                    <input id="mat4" onkeyup="verf_num(this)"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
                                                         type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
@@ -802,7 +802,7 @@
                                             <div class="form-row ">
                                                 <label class="col-sm-3 col-form-label" for="mat5">Quimica</label>
                                                 <div class="col-sm-2">
-                                                    <input id="mat5"
+                                                    <input id="mat5" onkeyup="verf_num(this)"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
                                                         type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
@@ -811,7 +811,7 @@
                                             <div class="form-row ">
                                                 <label class="col-sm-3 col-form-label" for="mat6">Sociales</label>
                                                 <div class="col-sm-2">
-                                                    <input id="mat6"
+                                                    <input id="mat6" onkeyup="verf_num(this)"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
                                                         type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
@@ -1078,7 +1078,7 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="pun">Puntaje Obtenido</label>
-                                                        <input id="pun" data-tippy-content="Digite el puntaje obtenido"
+                                                        <input id="pun" onkeyup="verf_num(this)" data-tippy-content="Digite el puntaje obtenido"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Puntaje Obtenido"
                                                             required>
@@ -1089,7 +1089,7 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="ao_pre">¿Año que presentaste el examen?</label>
-                                                        <input id="ao_pre"
+                                                        <input id="ao_pre" onkeyup="verf_num(this)"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="¿Año que presentaste el examen?"
                                                             data-tippy-content="Digite el año de presentación del examen" required>
@@ -1198,19 +1198,19 @@
                                                 <div class="col">
                                                     <div class="form-inline">
                                                         <div class="form-group">
-                                                            <input id="pun"
+                                                            <input id="pun" onkeyup="verf_num(this)"
                                                                 class="col-2 form-control form-control-sm custom-control"
                                                                 type="text" placeholder="AC" data-tippy-content="Digite codigo AC"
                                                                 style="margin-right: 10px;" required>
-                                                            <input id="pun"
+                                                            <input id="pun" onkeyup="verf_num(this)"
                                                                 class="col-2 form-control form-control-sm custom-control"
                                                                 type="text" placeholder="AÑO" data-tippy-content="Digite el año"
                                                                 style="margin-right: 10px;" required>
-                                                            <input id="pun"
+                                                            <input id="pun" onkeyup="verf_num(this)"
                                                                 class="col-2 form-control form-control-sm custom-control"
                                                                 type="text" placeholder="PERIODO" data-tippy-content="Digite el periodo"
                                                                 style="margin-right: 10px;" required>
-                                                            <input id="pun"
+                                                            <input id="pun" onkeyup="verf_num(this)"
                                                                 class="col-2 form-control form-control-sm custom-control"
                                                                 type="text" placeholder="7 DÍGITOS" data-tippy-content="Digite el codigo de 7 dígitos"
                                                                 required>
@@ -1233,7 +1233,7 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="codIns">Código de Inscripción</label>
-                                                        <input id="codIns"
+                                                        <input id="codIns" onkeyup="verf_num(this)"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Cóodigo de Inscripción"
                                                             data-tippy-content="Digite el código de inscripción" required>

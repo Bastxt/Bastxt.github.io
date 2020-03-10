@@ -239,3 +239,33 @@ $('#return_inf_icfes').click(function () {
 function dis_opc(){
     confAlert('Alerta de Sistema','Funcion en desuso')
 }
+
+
+//funcion de validación
+    // Verificacion campo numerico
+    //===========================================================================================
+    /**
+     *Description: Verificacion de expresiones regulares para campos numericos
+     *@param {Object} campo objeto correspondiente al campo a validar
+     *@returns {Void} 
+     **/
+    function verf_num(campo) {
+        $("#" + campo.id).keyup(function () {
+            //regex
+            $("#" + campo.id).val(this.value.match(/[0-9]*/));
+        });
+    }
+
+    // Verificacion campo texto
+    //===========================================================================================
+    /**
+     *Description: Verificacion de expresiones regulares para campos de texto
+     *@param {Object} campo objeto correspondiente al campo a validar
+     *@returns {Void} 
+     **/
+    function verf_text(campo) {
+        $("#" + campo.id).keyup(function () {
+            //regex
+            $("#" + campo.id).val(this.value.match(/[ a-zA-Z0-9#-]*/));
+        });
+    }

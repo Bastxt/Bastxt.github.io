@@ -17,12 +17,12 @@
         <div class="row">
             <div class="col nv-side">
                 <div class="navbar bg-nav">
-                    <a id="home" class="navbar-brand pull-left" href="#" data-toggle="tooltip" data-placement="top"
+                    <a id="home" data-tippy-content="Inicio" class="navbar-brand pull-left" href="#" data-toggle="tooltip" data-placement="top"
                         title="Home">
                         <img class="icon_nav" src="ASSETS/iconos-home.png" />
                     </a>
                     <img class="p_ico" src="ASSETS/eafit_logo.png" width="100px" />
-                    <a id="exit" class="navbar-brand pull-right" href="#" data-toggle="Exit" title="Exit">
+                    <a id="exit" data-tippy-content="Salir" class="navbar-brand pull-right" href="#" data-toggle="Exit" title="Exit">
                         <img class="icon_nav" src="ASSETS/iconos-salir.png" />
                     </a>
                 </div>
@@ -31,19 +31,19 @@
         <div class="row justify-content-center h-100">
             <div class="col-2 h-100 l_con">
                 <ul class="list-group list-group-flush">
-                    <li id="progress_dat_per" class="list-group-item item_mn" style="color: #11227C;">
+                    <li id="progress_dat_per" data-tippy-content="Progreso Datos Personales" class="list-group-item item_mn" style="color: #11227C;">
                         <span class="per_icon"></span>1. DATOS PERSONALES
                     </li>
-                    <li id="progress_pro_aca" class="list-group-item item_mn">
+                    <li id="progress_pro_aca" data-tippy-content="Progreso programa académico" class="list-group-item item_mn">
                         <span class="aca_icon"></span>2. PROGRAMA ACADÉMICO
                     </li>
-                    <li id="progress_inf_aca" class="list-group-item item_mn">
+                    <li id="progress_inf_aca" data-tippy-content="Progreso Información academica" class="list-group-item item_mn">
                         <span class="info_aca_icon"></span>3. INFORMACIÓN ACADEMICA
                     </li>
-                    <li id="progress_gru_fam" class="list-group-item item_mn">
+                    <li id="progress_gru_fam" data-tippy-content="Progreso grupo familiar" class="list-group-item item_mn">
                         <span class="gru_fam_icon"></span>4. GRUPO FAMILIAR
                     </li>
-                    <li id="progress_req_adic" class="list-group-item item_mn">
+                    <li id="progress_req_adic" data-tippy-content="Progreso requerimientos adicionales" class="list-group-item item_mn">
                         <span class="req_icon"></span>5. REQUERIMIENTOS ADICIONALES
                     </li>
                 </ul>
@@ -307,9 +307,9 @@
                                 <div class="card-body">
                                     <p class="card-text txt-eafit">Opciones</p>
                                     <div class="dropdown-divider"></div>
-                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                    <a class="card-text txt-eafit selc" data-tippy-content="Guardar progreso" style="display: flex;"><span
                                             class="guardar_icon"></span>GUARDAR</a>
-                                    <a class="card-text txt-eafit selc" style="display: flex;"><span
+                                    <a class="card-text txt-eafit selc" data-tippy-content="Limpiar formulario actual" style="display: flex;"><span
                                             class="limpiar_icon"></span>LIMPIAR</a>
                                     <div class="dropdown-divider"></div>
                                     <div class="form-row">
@@ -343,7 +343,7 @@
                                                         <input id="type_pro"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Tipo de Programa"
-                                                            title="Tipo de Programa" required>
+                                                            data-tippy-content="Digite el tipo de programa" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -353,7 +353,7 @@
                                                         <label for="prog">Programa</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="prog" title="Programa" required>
+                                                            id="prog" data-tippy-content="Seleccione el programa al que desea aplicar" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -366,7 +366,7 @@
                                                         <label for="segO">Segunda Opción</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="segO" title="Segunda Opción" required>
+                                                            id="segO" data-tippy-content="Seleccione un programa como segunda opción" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -381,7 +381,7 @@
                                                         <label for="ini_sem">¿En qué semestre deseas iniciar?</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="ini_sem" title="Inicio Semestre" required>
+                                                            id="ini_sem" data-tippy-content="Seleccione el semestre en el que desea iniciar" required>
                                                             <option></option>
                                                             <option>Semestre 1</option>
                                                             <option>Semestre 2</option>
@@ -403,7 +403,7 @@
                                                         <label for="ini_sem">¿Cómo te enteraste del programa?</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="ini_sem" title="Inicio Semestre" required>
+                                                            id="ini_sem" data-tippy-content="Selecciona el medio por el cual nos conociste" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -443,12 +443,10 @@
                                                         <label for="rh">Tipo de aspirante</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="rh" title="RH" required>
+                                                            id="rh" data-tippy-content="Seleccione si es primera vez o transferencia externa" required>
                                                             <option></option>
-                                                            <option>Opc 1</option>
-                                                            <option>Opc 2</option>
-                                                            <option>Opc 3</option>
-                                                            <option>Opc 4</option>
+                                                            <option>Primera Vez</option>
+                                                            <option>Transferencia externa</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -588,7 +586,7 @@
                                                         <label for="type_pro">Nivel Máximo de estudio alcanzado</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="maxE" title="maxE" required>
+                                                            id="maxE" data-tippy-content="Seleccione el nivel de estudio maximo alcanzado" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -604,7 +602,7 @@
                                                         <input id="nom_ins"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Nombre Institución"
-                                                            title="Nombre Institución" required>
+                                                            data-tippy-content="Digite el nombre de la institución" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -614,7 +612,7 @@
                                                         <label for="pais">País</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="pais" title="País" required>
+                                                            id="pais" data-tippy-content="Seleccione el pais relacionado" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -634,7 +632,7 @@
                                                         <label for="dep">Departamento</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="dep" title="departamento" required>
+                                                            id="dep" data-tippy-content="Seleccione el departamento relacionado" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -656,7 +654,7 @@
                                                         <label for="ciudad">Ciudad</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="ciudad" title="Ciudad" required>
+                                                            id="ciudad" data-tippy-content="Seleccione la ciudad relacionada" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -672,7 +670,7 @@
                                                         <label for="aoGra">Año de Grado</label>
                                                         <input id="aoGra" type="text"
                                                             class="form-control form-control-sm custom-control"
-                                                            title="aoGrado" placeholder="Año de Grado" required>
+                                                            data-tippy-content="Digite el año en el cual se graduo" placeholder="Año de Grado" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -682,7 +680,7 @@
                                                         <label for="prog">Programa</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="prog" title="programa" required>
+                                                            id="prog" data-tippy-content="Seleccione el programa relacionado" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -696,7 +694,7 @@
                                                         <label for="modl">Modalidad</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="modl" title="modalidad" required>
+                                                            id="modl" data-tippy-content="Seleccione la modalidad relacionada" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -730,7 +728,7 @@
                                                             cursando</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="graB" title="Grado de bachillerato que estas cursando"
+                                                            id="graB" data-tippy-content="Seleccione el grado al cual pertenece actualmente"
                                                             required>
                                                             <option></option>
                                                             <option>Opc 1</option>
@@ -747,7 +745,7 @@
                                                         <label for="esc">Selecciona escala de evaluación</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="esc" title="Selecciona escala de evaluación" required>
+                                                            id="esc" data-tippy-content="Seleccione su escala de evaluación" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -770,7 +768,7 @@
                                                 <div class="col-sm-2">
                                                     <input id="mat1"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
-                                                        type="text" placeholder="Nota" title="Ingles" required>
+                                                        type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
                                             </div>
                                             <hr>
@@ -779,7 +777,7 @@
                                                 <div class="col-sm-2">
                                                     <input id="mat2"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
-                                                        type="text" placeholder="Nota" title="Matematicas" required>
+                                                        type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
                                             </div>
                                             <hr>
@@ -788,7 +786,7 @@
                                                 <div class="col-sm-2">
                                                     <input id="mat3"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
-                                                        type="text" placeholder="Nota" title="Fisica" required>
+                                                        type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
                                             </div>
                                             <hr>
@@ -797,7 +795,7 @@
                                                 <div class="col-sm-2">
                                                     <input id="mat4"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
-                                                        type="text" placeholder="Nota" title="Filosofia" required>
+                                                        type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
                                             </div>
                                             <hr>
@@ -806,7 +804,7 @@
                                                 <div class="col-sm-2">
                                                     <input id="mat5"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
-                                                        type="text" placeholder="Nota" title="Quimica" required>
+                                                        type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
                                             </div>
                                             <hr>
@@ -815,7 +813,7 @@
                                                 <div class="col-sm-2">
                                                     <input id="mat6"
                                                         class="form-control form-control-sm custom-control custom-control-inline"
-                                                        type="text" placeholder="Nota" title="Sociales" required>
+                                                        type="text" placeholder="Nota" data-tippy-content="Digite su nota" required>
                                                 </div>
                                             </div>
                                             <hr>
@@ -938,7 +936,7 @@
                                                         <label for="graB">¿Que idioma deseas certificar?</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="graB" title="Grado de bachillerato que estas cursando"
+                                                            id="graB" data-tippy-content="Seleccione el idioma que desea certificar"
                                                             required>
                                                             <option></option>
                                                             <option>Opc 1</option>
@@ -951,7 +949,7 @@
                                             </div>
                                             <div class="form-row align-middle">
                                                 <div class="col-sm-3 align-middle">
-                                                    <label class="col-form-label align-middle" for="lect">Nivel de
+                                                    <label class="col-form-label align-middle" data-tippy-content="Califique su nivel de lectura" for="lect">Nivel de
                                                         Lectura:</label>
                                                 </div>
                                                 <div class="col-sm-2 align-middle">
@@ -982,7 +980,7 @@
                                             <hr>
                                             <div class="form-row align-middle">
                                                 <div class="col-sm-3 align-middle">
-                                                    <label class="col-form-label align-middle" for="lect">Nivel de
+                                                    <label class="col-form-label align-middle" data-tippy-content="Califique su nivel de escritura" for="lect">Nivel de
                                                         Escritura:</label>
                                                 </div>
                                                 <div class="col-sm-2 align-middle">
@@ -1013,7 +1011,7 @@
                                             <hr>
                                             <div class="form-row align-middle">
                                                 <div class="col-sm-3 align-middle">
-                                                    <label class="col-form-label align-middle" for="lect">Nivel de
+                                                    <label class="col-form-label align-middle" data-tippy-content="Califique su nivel de conversación" for="lect">Nivel de
                                                         conversación:</label>
                                                 </div>
                                                 <div class="col-sm-2 align-middle">
@@ -1066,7 +1064,7 @@
                                                         <label for="pru_pre">Prueba Presentada</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="pru_pre" title="Prueba Presentada" required>
+                                                            id="pru_pre" data-tippy-content="Seleccione la prueba presentada" required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -1080,10 +1078,10 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="pun">Puntaje Obtenido</label>
-                                                        <input id="pun"
+                                                        <input id="pun" data-tippy-content="Digite el puntaje obtenido"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Puntaje Obtenido"
-                                                            title="Puntaje Obtenido" required>
+                                                            required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1094,7 +1092,7 @@
                                                         <input id="ao_pre"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="¿Año que presentaste el examen?"
-                                                            title="¿Año que presentaste el examen?" required>
+                                                            data-tippy-content="Digite el año de presentación del examen" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1202,19 +1200,19 @@
                                                         <div class="form-group">
                                                             <input id="pun"
                                                                 class="col-2 form-control form-control-sm custom-control"
-                                                                type="text" placeholder="AC" title="AC"
+                                                                type="text" placeholder="AC" data-tippy-content="Digite codigo AC"
                                                                 style="margin-right: 10px;" required>
                                                             <input id="pun"
                                                                 class="col-2 form-control form-control-sm custom-control"
-                                                                type="text" placeholder="AÑO" title="AÑO"
+                                                                type="text" placeholder="AÑO" data-tippy-content="Digite el año"
                                                                 style="margin-right: 10px;" required>
                                                             <input id="pun"
                                                                 class="col-2 form-control form-control-sm custom-control"
-                                                                type="text" placeholder="PERIODO" title="PERIODO"
+                                                                type="text" placeholder="PERIODO" data-tippy-content="Digite el periodo"
                                                                 style="margin-right: 10px;" required>
                                                             <input id="pun"
                                                                 class="col-2 form-control form-control-sm custom-control"
-                                                                type="text" placeholder="7 DÍGITOS" title="7 DÍGITOS"
+                                                                type="text" placeholder="7 DÍGITOS" data-tippy-content="Digite el codigo de 7 dígitos"
                                                                 required>
                                                         </div>
                                                     </div>
@@ -1238,7 +1236,7 @@
                                                         <input id="codIns"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Cóodigo de Inscripción"
-                                                            title="Código de Inscripción" required>
+                                                            data-tippy-content="Digite el código de inscripción" required>
                                                     </div>
                                                 </div>
                                             </div>

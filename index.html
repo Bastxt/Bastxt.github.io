@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
 </head>
 
 <body>
@@ -30,19 +31,19 @@
         <div class="row justify-content-center h-100">
             <div class="col-2 h-100 l_con">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item item_mn">
+                    <li id="progress_dat_per" class="list-group-item item_mn" style="color: #11227C;">
                         <span class="per_icon"></span>1. DATOS PERSONALES
                     </li>
-                    <li class="list-group-item item_mn">
+                    <li id="progress_pro_aca" class="list-group-item item_mn">
                         <span class="aca_icon"></span>2. PROGRAMA ACADÉMICO
                     </li>
-                    <li class="list-group-item item_mn">
+                    <li id="progress_inf_aca" class="list-group-item item_mn">
                         <span class="info_aca_icon"></span>3. INFORMACIÓN ACADEMICA
                     </li>
-                    <li class="list-group-item item_mn">
+                    <li id="progress_gru_fam" class="list-group-item item_mn">
                         <span class="gru_fam_icon"></span>4. GRUPO FAMILIAR
                     </li>
-                    <li class="list-group-item item_mn">
+                    <li id="progress_req_adic" class="list-group-item item_mn">
                         <span class="req_icon"></span>5. REQUERIMIENTOS ADICIONALES
                     </li>
                 </ul>
@@ -77,10 +78,10 @@
                                                 <div class="col col-6">
                                                     <div class="form-group">
                                                         <label for="Nom">Nombre</label>
-                                                        <input id="Nom"
+                                                        <input id="Nom" data-tippy-content="Digite su Nombre"
                                                             class="form-control form-control-sm custom-control"
-                                                            type="text" placeholder="Nombre" title="Nombre"
-                                                            name="OBKey__704_1" required>
+                                                            type="text" placeholder="Nombre" name="OBKey__704_1"
+                                                            required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -91,7 +92,8 @@
                                                         <input id="P_ape"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Primer Apellido"
-                                                            title="Primer Apellido" name="OBKey__705_1" required>
+                                                            data-tippy-content="Digite su primer apellido."
+                                                            name="OBKey__705_1" required>
                                                     </div>
                                                 </div>
                                                 <div class="col col-6">
@@ -100,7 +102,8 @@
                                                         <input id="S_ape"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Segundo Apellido"
-                                                            title="Segundo Apellido" required>
+                                                            data-tippy-content="Digite su segundo apellido."
+                                                            required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -110,8 +113,9 @@
                                                         <label for="doc_type">Tipo de Documento</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="doc_type" title="Tipo de Documento" name="OBKey__706_1"
-                                                            required>
+                                                            id="doc_type"
+                                                            data-tippy-content="Seleccione su tipo de documento"
+                                                            name="OBKey__706_1" required>
                                                             <option></option>
                                                             <option>C.C</option>
                                                             <option>T.I</option>
@@ -126,7 +130,7 @@
                                                         <label for="aux_1">Numero Documento</label>
                                                         <input id="aux_1"
                                                             class="form-control form-control-sm custom-control"
-                                                            type="text" placeholder="Auxiliar 1" title="Auxiliar 1"
+                                                            type="text" placeholder="Numero Documento" data-tippy-content="Digite su numero de documento"
                                                             name="OBKey__707_1" required>
                                                     </div>
                                                 </div>
@@ -138,7 +142,7 @@
                                                         <input id="fchN"
                                                             class="form-control form-control-sm custom-control"
                                                             type="date" placeholder="Fecha de Nacimiento"
-                                                            title="Fecha de Nacimiento" name="OBKey__708_1" required>
+                                                            data-tippy-content="Complete su fecha de nacimiento" name="OBKey__708_1" required>
                                                     </div>
                                                 </div>
                                                 <div class="col col-6">
@@ -146,12 +150,12 @@
                                                         <label for="luN">Lugar de Nacimiento</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="luN" title="Tipo de Documento" name="OBKey__709_1"
+                                                            id="luN" data-tippy-content="Seleccione su lugar de nacimiento" name="OBKey__709_1"
                                                             required>
                                                             <option></option>
-                                                            <option></option>
-                                                            <option></option>
-                                                            <option></option>
+                                                            <option>Opc 1</option>
+                                                            <option>Opc 2</option>
+                                                            <option>Opc 3</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -163,7 +167,7 @@
                                                         <label for="gen">Género</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="gen" title="Género" name="OBKey__710_1" required>
+                                                            id="gen" data-tippy-content="Seleccione su género" name="OBKey__710_1" required>
                                                             <option></option>
                                                             <option>Masculino</option>
                                                             <option>Femenino</option>
@@ -176,7 +180,7 @@
                                                         <label for="estC">Estado Civil</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="estC" title="Estado Civil" name="OBKey__711_1" required>
+                                                            id="estC" data-tippy-content="Seleccione su estado civil" name="OBKey__711_1" required>
                                                             <option></option>
                                                             <option>Soltero</option>
                                                             <option>Casado</option>
@@ -192,7 +196,7 @@
                                                         <label for="rh">RH</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="rh" title="RH" name="OBKey__712_1" required>
+                                                            id="rh" data-tippy-content="seleccione su RH" name="OBKey__712_1" required>
                                                             <option></option>
                                                             <option>O</option>
                                                             <option>A</option>
@@ -206,7 +210,7 @@
                                                         <label for="eps">EPS</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="esp" title="EPS" name="OBKey__713_1" required>
+                                                            id="esp" data-tippy-content="Seleccione su EPS" name="OBKey__713_1" required>
                                                             <option></option>
                                                             <option>EPS 1</option>
                                                             <option>EPS 2</option>
@@ -223,7 +227,7 @@
                                                         <input id="dir"
                                                             class="form-control form-control-sm custom-control"
                                                             type="text" placeholder="Dirección de Residencia"
-                                                            title="Dirección de Residencia" name="OBKey__714_1"
+                                                            data-tippy-content="Digite su dirección de residencia" name="OBKey__714_1"
                                                             required>
                                                     </div>
                                                 </div>
@@ -234,7 +238,7 @@
                                                         <label for="estS">Estrato Socioeconomico</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="estS" title="Estrato Socioeconomico" name="OBKey__715_1"
+                                                            id="estS" data-tippy-content="Seleccione su estrato socioeconomico" name="OBKey__715_1"
                                                             required>
                                                             <option></option>
                                                             <option>Opc 1</option>
@@ -313,8 +317,8 @@
 
                                         </div>
                                         <div class="col col-6" style="text-align-last: end;">
-                                            <a id="dis_opc" onclick="dis_opc()" class="card-text txt-eafit selc" style="">ADELANTE<span
-                                                    class="ade_icon"></span></a>
+                                            <a id="dis_opc" onclick="dis_opc()" class="card-text txt-eafit selc"
+                                                style="">ADELANTE<span class="ade_icon"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -558,7 +562,8 @@
                                                     class="atr_icon"></span>ATRAS</a>
                                         </div>
                                         <div class="col col-6" style="text-align-last: end;">
-                                            <a id="dis_opc" onclick="dis_opc()" class="card-text txt-eafit selc">ADELANTE<span
+                                            <a id="dis_opc" onclick="dis_opc()"
+                                                class="card-text txt-eafit selc">ADELANTE<span
                                                     class="ade_icon"></span></a>
                                         </div>
                                     </div>
@@ -725,7 +730,8 @@
                                                             cursando</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="graB" title="Grado de bachillerato que estas cursando" required>
+                                                            id="graB" title="Grado de bachillerato que estas cursando"
+                                                            required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -822,7 +828,8 @@
                                 <button id="return_inf_aca" type="button" class="btn btn-info">Regresar</button>
                             </div>
                             <div class="form-group float-right">
-                                <button id="cont_inf_aca" type="submit" form="inf_aca" class="btn btn-info">Continuar</button>
+                                <button id="cont_inf_aca" type="submit" form="inf_aca"
+                                    class="btn btn-info">Continuar</button>
                             </div>
                             <br>
                             <br>
@@ -931,7 +938,8 @@
                                                         <label for="graB">¿Que idioma deseas certificar?</label>
                                                         <select
                                                             class="form-control custom-control form-control-sm txt-eafit"
-                                                            id="graB" title="Grado de bachillerato que estas cursando" required>
+                                                            id="graB" title="Grado de bachillerato que estas cursando"
+                                                            required>
                                                             <option></option>
                                                             <option>Opc 1</option>
                                                             <option>Opc 2</option>
@@ -1099,7 +1107,8 @@
                                 <button id="return_dom_idi" type="button" class="btn btn-info">Regresar</button>
                             </div>
                             <div class="form-group float-right">
-                                <button id="continue_dom_idi" type="submit" form="dom_idi" class="btn btn-info">Continuar</button>
+                                <button id="continue_dom_idi" type="submit" form="dom_idi"
+                                    class="btn btn-info">Continuar</button>
                             </div>
                             <br>
                             <br>
@@ -1194,7 +1203,7 @@
                                                             <input id="pun"
                                                                 class="col-2 form-control form-control-sm custom-control"
                                                                 type="text" placeholder="AC" title="AC"
-                                                                style="margin-right: 10px;" required> 
+                                                                style="margin-right: 10px;" required>
                                                             <input id="pun"
                                                                 class="col-2 form-control form-control-sm custom-control"
                                                                 type="text" placeholder="AÑO" title="AÑO"
@@ -1205,7 +1214,8 @@
                                                                 style="margin-right: 10px;" required>
                                                             <input id="pun"
                                                                 class="col-2 form-control form-control-sm custom-control"
-                                                                type="text" placeholder="7 DÍGITOS" title="7 DÍGITOS" required>
+                                                                type="text" placeholder="7 DÍGITOS" title="7 DÍGITOS"
+                                                                required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1252,7 +1262,8 @@
                                 <button id="return_inf_icfes" type="button" class="btn btn-info">Regresar</button>
                             </div>
                             <div class="form-group float-right">
-                                <button id="continue_inf_icfes" type="submit" form="inf_icfes" class="btn btn-info">Continuar</button>
+                                <button id="continue_inf_icfes" type="submit" form="inf_icfes"
+                                    class="btn btn-info">Continuar</button>
                             </div>
                             <br>
                             <br>
@@ -1305,10 +1316,18 @@
             </div>
         </div>
     </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom-script.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('[data-tippy-content]', {
+            followCursor: true,
+            theme: 'EAFIT'
+        });
+    </script>
 </body>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom-script.js"></script>
 
 </html>

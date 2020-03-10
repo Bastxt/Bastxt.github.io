@@ -25,11 +25,14 @@ function confAlert(title, body) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
+                    $('#progress_dat_per').css('color','#D93D3D');
                     confAlert('Formulario incompleto','Porfavor complete correctamente el formulario')
                 }
                 else {
                     event.preventDefault();
                     event.stopPropagation();
+                    $('#progress_dat_per').css('color','#8FC943');
+                    $('#progress_pro_aca').css('color','#11227C');
                     $('#dat_per_sec').fadeOut("slow");
                     $('#dat_per_sec').hide();
 
@@ -58,11 +61,14 @@ function confAlert(title, body) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
+                    $('#progress_pro_aca').css('color','#D93D3D');
                     confAlert('Formulario incompleto','Porfavor complete correctamente el formulario')
                 }
                 else {
                     event.preventDefault();
                     event.stopPropagation();
+                    $('#progress_pro_aca').css('color','#8FC943');
+                    $('#progress_inf_aca').css('color','#11227C');
                     $('#pro_aca_sec').fadeOut("slow");
                     $('#pro_aca_sec').hide();
 
@@ -90,6 +96,7 @@ function confAlert(title, body) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
+                    $('#progress_inf_aca').css('color','#D93D3D');
                     confAlert('Formulario incompleto','Porfavor complete correctamente el formulario')
                 }
                 else {
@@ -123,6 +130,7 @@ function confAlert(title, body) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
+                    $('#progress_inf_aca').css('color','#D93D3D');
                     confAlert('Formulario incompleto','Porfavor complete correctamente el formulario')
                 }
                 else {
@@ -155,6 +163,7 @@ function confAlert(title, body) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
+                    $('#progress_inf_aca').css('color','#D93D3D');
                     confAlert('Formulario incompleto','Porfavor complete correctamente el formulario')
                 }
                 else {
